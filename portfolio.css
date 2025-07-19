@@ -1378,6 +1378,48 @@ body.dark-mode .portfolio {
     gap: 1rem;
   }
 }
+.hamburger {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #9333ea;
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    display: none;
+    border-radius: 0 0 0 12px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}
 
 /* Smooth scrolling */
 html {

@@ -9,24 +9,27 @@
   </head>
   <body>
     <div class="portfolio">
-      <!-- Navigation -->
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="nav-content">
-            <div class="logo">Suhina Ray</div>
-            <div class="nav-links">
-                <button id="darkModeToggle" class="dark-toggle">🌙</button>
-              <a href="#home" class="nav-link active">Home</a>
-              <a href="#about" class="nav-link">About</a>
-              <a href="#education" class="nav-link">Education</a>
-              <a href="#projects" class="nav-link">Projects</a>
-              <a href="#reels" class="nav-link">Reels</a>
-              <a href="#contact" class="nav-link">Contact</a>
-              <a href="Profile.pdf" download class="nav-link resume-download">Download Resume</a>
-            </div>
-          </div>
-        </div>
-      </nav>        
+      <!-- Navigation with Hamburger -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Suhina Ray</div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <div class="nav-links" id="navLinks">
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+      
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#reels" class="nav-link">Reels</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="Profile.pdf" download class="nav-link resume-download">Download Resume</a>
+    </div>
+  </div>
+</nav>
+   
 
       <!-- Hero Section -->
       <section id="home" class="hero-section">
@@ -520,6 +523,15 @@
           toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
         });
       </script>
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+      
       
   </body>
 </html>
