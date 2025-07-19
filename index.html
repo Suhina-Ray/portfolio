@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="portfolio">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-content">
+            <div class="logo">Suhina Ray</div>
+            <div class="nav-links">
+                <button id="darkModeToggle" class="dark-toggle">🌙</button>
+              <a href="#home" class="nav-link active">Home</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#education" class="nav-link">Education</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#reels" class="nav-link">Reels</a>
+              <a href="#contact" class="nav-link">Contact</a>
+              <a href="Profile.pdf" download class="nav-link resume-download">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </nav>        
+
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="profile-image">
+              <img src="suhina.jpg" alt="Suhina Ray" class="avatar-image" />
+            </div>
+
+            <h1 class="hero-title">Suhina Ray</h1>
+            <p class="hero-subtitle">
+              Computer Science Engineering Student at Manipal University Jaipur
+              | Full-Stack Developer passionate about creating innovative
+              solutions with clean UI/UX and modern tech stacks.
+            </p>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/suhina-ray-47738132a/"
+                class="social-link"
+                target="_blank"
+                title="LinkedIn"
+                >💼</a
+              >
+              <a
+                href="https://github.com/Suhina-Ray"
+                class="social-link"
+                target="_blank"
+                title="GitHub"
+                >🐱</a
+              >
+              <a
+                href="https://www.instagram.com/suhina_raychords/"
+                class="social-link"
+                target="_blank"
+                title="Instagram"
+                >📸</a
+              >
+              <a
+                href="mailto:suhinaray@example.com"
+                class="social-link"
+                title="Email"
+                >📧</a
+              >
+            </div>
+            <div class="cta-container">
+                <button
+                  class="cta-button"
+                  onclick="document.getElementById('contact').scrollIntoView()"
+                >
+                  Get In Touch
+                </button>
+              </div>
+              
+        </div>
+      </section>
+      
+      <!-- Quick Facts Section -->
+      <section class="quick-facts-section">
+        <div class="decorative-element music-note">♪</div>
+        <div class="decorative-element code-symbol">&lt;/&gt;</div>
+
+        <div class="container">
+          <h2 class="section-title">Quick Facts About Suhina</h2>
+          <p class="section-subtitle">Where Music Meets Code, Magic Happens</p>
+
+          <div class="facts-grid">
+            <div class="fact-card">
+              <h3 class="fact-title">Multi-Instrumentalist Performer</h3>
+              <p class="fact-description">
+                Suhina plays the <span class="highlight">piano</span>, <span class="highlight">guitar</span>, and <span class="highlight">ukulele</span>, and has been performing live music since school — a rare mix of musical talent and tech skills!
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h3 class="fact-title">Self-Made Tech Creator</h3>
+              <p class="fact-description">
+                Built a <span class="highlight">Digital Detox App</span>, <span class="highlight">ScholarSphere</span>, and even a <span class="highlight">weather forecasting app</span> — all before completing the first year of college. That's pure initiative!
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h3 class="fact-title">IEEE RAS Hackathon Winner</h3>
+              <p class="fact-description">
+                Won a chessbot-making competition organized by <span class="highlight">IEEE Robotics & Automation Society</span>, showcasing a blend of strategy, AI, and problem-solving skills.
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h3 class="fact-title">Poet of Code & Melody</h3>
+              <p class="fact-description">
+                Writes <span class="highlight">original songs</span> (like <em>Figure Out</em>) that are both <span class="highlight">emotionally deep and musically soothing</span> — blending logic and emotion in everything created.
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h3 class="fact-title">First-Year, Full Power</h3>
+              <p class="fact-description">
+                As a <span class="highlight">1st-year BTech student at Manipal University Jaipur</span>, already building full-stack projects using <span class="highlight">Flutter, FastAPI, SQL, Angular, and JavaScript</span>.
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h3 class="fact-title">Scholarship Supporter</h3>
+              <p class="fact-description">
+                Created <em>ScholarSphere</em>, an app that <span class="highlight">helps students find scholarships</span> based on their backgrounds — turning empathy into impactful tech.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid" style="display: flex; justify-content: center;">
+        <div class="about-text card" style="max-width: 800px;">
+          <h3>Hello! I'm a dedicated CS Engineering student</h3>
+          <p>
+            Currently pursuing my Bachelor of Technology (B.Tech) in
+            Computer Science and Engineering at Manipal University Jaipur,
+            I'm passionate about building scalable, responsive, and
+            user-friendly applications that make a real-world impact.
+          </p>
+          <p>
+            My academic journey began at La Martiniere for Girls, Kolkata
+            (ICSE/ISC), and has led me to explore full-stack development,
+            mobile app development with Flutter, and backend API design. I
+            love combining technical functionality with clean UI/UX design.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Education Section -->
+<section id="education" class="education-section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon">🎓</div>
+            <div class="education-info">
+              <h3>B.Tech Computer Science & Engineering</h3>
+              <div class="university">Manipal University Jaipur</div>
+              <div class="duration">2024 - 2028 (Expected)</div>
+              <div class="gpa">Core Specialization</div>
+            </div>
+          </div>
+          <div class="coursework">
+            <p><strong>Academic Interests:</strong></p>
+            <div class="course-tags">
+              <span class="course-tag">Algorithms & Data Structures</span>
+              <span class="course-tag">Web Development</span>
+              <span class="course-tag">Mobile Development</span>
+              <span class="course-tag">Backend API Design</span>
+              <span class="course-tag">UI/UX Design</span>
+              <span class="course-tag">AI & NLP</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon">📚</div>
+            <div class="education-info">
+              <h3>Higher Secondary Education</h3>
+              <div class="university">La Martiniere for Girls, Kolkata</div>
+              <div class="duration">ICSE & ISC Boards</div>
+              <div class="gpa">Science Stream</div>
+            </div>
+          </div>
+          <div class="coursework">
+            <p><strong>Foundation Subjects:</strong></p>
+            <div class="course-tags">
+              <span class="course-tag">Mathematics</span>
+              <span class="course-tag">Physics</span>
+              <span class="course-tag">Chemistry</span>
+              <span class="course-tag">Computer Science</span>
+              <span class="course-tag">Electronics</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Achievements Section with Cards -->
+<section id="experience" style="padding: 4rem 2rem; background: rgba(255, 255, 255, 0.3);">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <h2 class="section-title" style="text-align:center; font-size: 2.5rem; margin-bottom: 2rem;">
+            Experience & 
+            <span style="
+              background: linear-gradient(to right, #9333ea, #ec4899);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              color: transparent;
+            ">
+              Achievements
+            </span>
+          </h2>
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+        
+        <!-- Left: Experience Card -->
+        <div style="backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);">
+          <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem;">Professional & Extracurricular Experience</h3>
+  
+          <div class="experience-block" style="margin-bottom: 1.5rem;">
+            <strong>IEEE WIE MUJ – Senior Coordinator (Editorial)</strong>
+            <p><em>May 2025 – Present</em> | Manipal University Jaipur</p>
+            <p>Leading editorial content and collaborating with tech and design teams for impactful communication.</p>
+          </div>
+  
+          <div class="experience-block" style="margin-bottom: 1.5rem;">
+            <strong>The Music Club MUJ – SWT Media & Design</strong>
+            <p><em>Dec 2024 – Present</em> | Jaipur</p>
+            <ul style="margin-left: 1rem;">
+              <li>Organizing core team member for TMC Live 7.0 and Onerois’25.</li>
+              <li>Designed and managed visuals and digital content for events.</li>
+            </ul>
+          </div>
+  
+          <div class="experience-block" style="margin-bottom: 1.5rem;">
+            <strong>La Martiniere for Girls – Assistant Editor-in-Chief</strong>
+            <p><em>Jul 2022 – Jun 2023</em> | Kolkata</p>
+            <p>Led school publication initiatives and edited annual magazines and reports.</p>
+          </div>
+  
+          <div class="experience-block">
+            <strong>Senior Prefect & Junior Prefect</strong>
+            <p><em>Jul 2021 – May 2024</em> | La Martiniere for Girls, Kolkata</p>
+            <p>Mentored junior students and represented the school at interschool events.</p>
+          </div>
+        </div>
+  
+        <!-- Right: Achievements Card -->
+        <div style="backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);">
+          <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem;">Key Achievements</h3>
+          <ul style="list-style: none; padding: 0; line-height: 1.8;">
+            <li>🏆 Ranked <strong>4th Globally</strong> in Leadership Olympiad</li>
+            <li>🎓 Ranked <strong>8th Globally</strong> in Ethics and Values Olympiad</li>
+            <li>🌱 Winner – <strong>Climate Sustainability Tech Innovation</strong></li>
+            <li>🤖 Winner – <strong>ChessBot Hackathon</strong> by IEEE RAS</li>
+            <li>💻 Winner – <strong>Skillfull Coding Hackathon</strong> by CSC MUJ</li>
+            <li>🥇 <strong>Gold Medal</strong> for Excellence in Mathematics</li>
+            <li>🌐 Winner – <strong>Website Development Competition</strong> at La Creo</li>
+            <li>📜 Certified in <strong>AI, Java, Python, PowerPoint, Cybersecurity</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+ <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Digital Detox App -->
+        <div class="project-card">
+          <div class="project-image">🧘‍♀️</div>
+          <h3>Digital Detox App</h3>
+          <p class="project-description">A mindful productivity app to help reduce screen time with journaling, tasks, music, and more.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Suhina-Ray/Digital-detox-app" target="_blank" class="project-link primary">View on GitHub</a>
+          </div>
+        </div>
+      
+        <!-- ScholarSphere -->
+        <div class="project-card">
+          <div class="project-image">🎓</div>
+          <h3>ScholarSphere</h3>
+          <p class="project-description">A scholarship recommender system using Flutter + FastAPI that generates smart results and PDF summaries.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FastAPI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Suhina-Ray/Scholarspherefinal" target="_blank" class="project-link primary">View on GitHub</a>
+          </div>
+        </div>
+      
+        <!-- Weather App -->
+        <div class="project-card">
+          <div class="project-image">⛅</div>
+          <h3>Weather App</h3>
+          <p class="project-description">A clean weather app using OpenWeather API with location-based forecasts and smooth UI animations.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Suhina-Ray/weather-app" target="_blank" class="project-link primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section id="reels" class="reels-section">
+  <h2 style="color: rgb(184, 133, 215); font-size: 2rem;">🎬 Reels Preview</h2>
+  <p style="color: #d99ec1;">Hover to explore my musical moments:</p>
+
+  <div style="
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  ">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <video src="videos/reel1.mp4" muted loop playsinline
+        style="width: 250px; border-radius: 16px; box-shadow: 0 0 20px rgba(255,255,255,0.2);"
+        onmouseover="this.play()" onmouseout="this.pause(); this.currentTime = 0;">
+      </video>
+      <p style="margin-top: 0.5rem; color: #eee;">Reel 1: Studio Session</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <video src="videos/reel2.mp4" muted loop playsinline
+        style="width: 250px; border-radius: 16px; box-shadow: 0 0 20px rgba(255,255,255,0.2);"
+        onmouseover="this.play()" onmouseout="this.pause(); this.currentTime = 0;">
+      </video>
+      <p style="margin-top: 0.5rem; color: #eee;">Reel 2: Live Vibes</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <video src="videos/reel3.mp4" muted loop playsinline
+        style="width: 250px; border-radius: 16px; box-shadow: 0 0 20px rgba(255,255,255,0.2);"
+        onmouseover="this.play()" onmouseout="this.pause(); this.currentTime = 0;">
+      </video>
+      <p style="margin-top: 0.5rem; color: #eee;">Reel 3: Behind the Scenes</p>
+    </div>
+  </div>
+</div>
+
+      
+      
+      <!-- Instagram Embed Script -->
+      <script async src="//www.instagram.com/embed.js"></script>
+      
+    </section>
+      
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-content">
+              <p class="contact-text">
+                I'm always excited about new opportunities, collaborative
+                projects, and innovative tech challenges! Whether you want to
+                discuss academic projects, development opportunities,
+                hackathons, or just connect over shared interests in technology
+                and music, I'd love to hear from you.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="contact-icon">📧</div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:suhina.ray@gmail.com">suhina.ray@gmail.com</a></p>
+                </div>
+              
+                <div class="contact-method">
+                  <div class="contact-icon">💼</div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/suhina-ray-47738132a/?originalSubdomain=in" target="_blank">Connect with me</a></p>
+                </div>
+              
+                <div class="contact-method">
+                  <div class="contact-icon">🐱</div>
+                  <h3>GitHub</h3>
+                  <p><a href="https://github.com/Suhina-Ray" target="_blank">Check out my code</a></p>
+                </div>
+              
+                <div class="contact-method">
+                  <div class="contact-icon">📸</div>
+                  <h3>Instagram</h3>
+                  <p><a href="https://www.instagram.com/suhina_raychords/" target="_blank">Follow for music reels</a></p>
+                </div>
+              </div>
+              
+
+              <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+  
+        <div class="contact-content">
+          <p class="contact-text">
+            I'm always excited about new opportunities, collaborative
+            projects, and innovative tech challenges! Whether you want to
+            discuss academic projects, development opportunities,
+            hackathons, or just connect over shared interests in technology
+            and music, I'd love to hear from you.
+          </p>
+  
+          <form class="contact-form" action="https://formspree.io/f/mvgqzpwj" method="POST" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+  
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+  
+          <!-- Success message -->
+          <p id="form-status" style="color: green; display: none; margin-top: 1rem; font-weight: bold;">
+            ✅ Message sent successfully!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- JS Script for form submission -->
+  <script>
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+  
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+  
+      if (response.ok) {
+        form.reset();
+        status.style.display = 'block';
+        status.style.color = 'green';
+        status.innerText = '✅ Message sent successfully!';
+      } else {
+        status.style.display = 'block';
+        status.style.color = 'red';
+        status.innerText = '❌ Oops! Something went wrong. Try again later.';
+      }
+    });
+  </script>
+  
+    </div>
+    <script>
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+          toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+      </script>
+      
+  </body>
+</html>
