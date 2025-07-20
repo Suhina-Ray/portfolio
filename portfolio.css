@@ -186,6 +186,30 @@ body {
     margin: 0 1rem;
   }
 }
+/* Make experience-achievements section responsive */
+@media (max-width: 768px) {
+  .experience-achievements-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience-achievements-wrapper > div {
+    width: 100%;
+  }
+
+  .certificate-scroller .scrolling-wrapper {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .certificate-scroller img {
+    width: 250px;
+    flex-shrink: 0;
+  }
+}
 
 /* Centering Experience & Achievements Section */
 .experience-achievements-wrapper {
