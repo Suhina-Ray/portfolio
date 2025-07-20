@@ -25,6 +25,56 @@ body {
   background-color: rgba(255, 255, 255, 0.08);
   color: #eee;
 }
+/* Make experience-achievements section responsive */
+@media (max-width: 768px) {
+  .experience-achievements-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience-achievements-wrapper > div {
+    width: 100%;
+  }
+
+  .certificate-scroller .scrolling-wrapper {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .certificate-scroller img {
+    width: 250px;
+    flex-shrink: 0;
+  }
+}
+.certificate-scroller {
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.certificate-scroller .scrolling-wrapper {
+  display: flex;
+  animation: scrollCertificates 30s linear infinite;
+}
+
+@keyframes scrollCertificates {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.certificate-scroller img {
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
 .dark-mode .experience-block p,
 .dark-mode .experience-block li,
@@ -186,37 +236,8 @@ body {
     margin: 0 1rem;
   }
 }
-/* Make experience-achievements section responsive */
-@media (max-width: 768px) {
-  .experience-achievements-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .experience-achievements-wrapper > div {
-    width: 100%;
-  }
-
-  .certificate-scroller .scrolling-wrapper {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-
-  .certificate-scroller img {
-    width: 250px;
-    flex-shrink: 0;
-  }
-}
 
 /* Centering Experience & Achievements Section */
-.experience-achievements-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* Certificate Scroller Animation */
 .certificate-scroller {
