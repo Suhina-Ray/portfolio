@@ -443,6 +443,65 @@ body.dark-mode .fact-card {
   display: inline-block;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+/* Decorative Elements Style */
+.decorative-element {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.15;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.music-note {
+  top: 50px;
+  left: 30px;
+  color: #92509c;
+}
+.decorative-element.star {
+  top: 30%;
+  right: 10%;
+  color: #facc15; /* amber */
+  font-size: 2rem;
+  opacity: 0.35;
+  animation-delay: 1s;
+}
+
+.decorative-element.bracket {
+  top: 80px;
+  left: 60%;
+  color: #efa9d7; /* teal green */
+  font-size: 2.5rem;
+  opacity: 0.3;
+  animation-delay: 2s;
+}
+
+.decorative-element.binary {
+  bottom: 20%;
+  left: 8%;
+  color: #ef4444; /* red */
+  font-family: "Courier New", monospace;
+  font-size: 1.8rem;
+  opacity: 0.4;
+  animation-delay: 3s;
+}
+
+.code-symbol {
+  bottom: 60px;
+  right: 40px;
+  color: #5a8b6b;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @keyframes scroll-certs {
   0% {
@@ -451,6 +510,10 @@ body.dark-mode .fact-card {
   100% {
     transform: translateX(-50%);
   }
+}
+.hero-content {
+  position: relative;
+  z-index: 2; /* To ensure it stays above background elements but under decorative ones if needed */
 }
 
 /* Navigation */
