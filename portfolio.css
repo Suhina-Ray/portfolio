@@ -21,6 +21,110 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+.dark-mode .experience-achievements-wrapper div {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #eee;
+}
+
+.dark-mode .experience-block p,
+.dark-mode .experience-block li,
+.dark-mode .experience-block strong,
+.dark-mode .experience-achievements-wrapper ul li {
+  color: #f0f0f0;
+}
+/* Bubbles Animation Background */
+.bubbles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: rise 20s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  left: 20%;
+  animation-duration: 25s;
+  width: 25px;
+  height: 25px;
+}
+
+.bubble:nth-child(2) {
+  left: 40%;
+  animation-duration: 18s;
+}
+
+.bubble:nth-child(3) {
+  left: 60%;
+  animation-duration: 22s;
+  width: 30px;
+  height: 30px;
+}
+
+.bubble:nth-child(4) {
+  left: 80%;
+  animation-duration: 20s;
+  width: 35px;
+  height: 35px;
+}
+
+.bubble:nth-child(5) {
+  left: 10%;
+  animation-duration: 30s;
+}
+
+.bubble:nth-child(6) {
+  left: 70%;
+  animation-duration: 28s;
+  width: 28px;
+  height: 28px;
+}
+
+.bubble:nth-child(7) {
+  left: 50%;
+  animation-duration: 23s;
+  width: 22px;
+  height: 22px;
+}
+
+.bubble:nth-child(8) {
+  left: 30%;
+  animation-duration: 19s;
+  width: 26px;
+  height: 26px;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .bubble-container {
   position: fixed;
   top: 0;
@@ -30,6 +134,97 @@ body {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
+}
+/* Hamburger transition */
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: inherit;
+  z-index: 1001;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+/* Smooth nav transition */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-link {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+/* For desktop view - always show nav */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  .nav-link {
+    margin: 0 1rem;
+  }
+}
+
+/* Centering Experience & Achievements Section */
+.experience-achievements-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Certificate Scroller Animation */
+.certificate-scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
+  border-radius: 12px;
+}
+
+.scrolling-wrapper {
+  display: inline-block;
+  animation: scroll-certs 30s linear infinite;
+}
+
+.certificate-scroller img {
+  height: 150px;
+  margin: 0 1rem;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes scroll-certs {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Navigation */
