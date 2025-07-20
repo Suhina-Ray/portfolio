@@ -25,6 +25,90 @@ body {
   background-color: rgba(255, 255, 255, 0.08);
   color: #eee;
 }
+.experience-section {
+  padding: 4rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.experience-achievements-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.experience-card,
+.achievement-card {
+  flex: 1 1 450px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+}
+
+.experience-card h3,
+.achievement-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.experience-block {
+  margin-bottom: 1.5rem;
+}
+
+.certificate-scroller {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.scrolling-wrapper img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .experience-achievements-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card,
+  .achievement-card {
+    max-width: 100%;
+  }
+
+  .scrolling-wrapper img {
+    width: 160px;
+  }
+}
+
 /* Make experience-achievements section responsive */
 @media (max-width: 768px) {
   .experience-achievements-wrapper {
